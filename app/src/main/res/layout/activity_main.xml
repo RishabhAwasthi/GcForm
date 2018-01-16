@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+>
+    <LinearLayout
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+    android:id="@+id/linmain"
+        android:background="@drawable/linbg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/spl"/>
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GadgetsCure"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sliver Era of Time"
+                android:textSize="12dp"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/lin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carry-in Lab Acknowledgement Sheet"
+            android:textSize="13dp"
+            android:textStyle="italic"
+            android:textColor="#424242"/>
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Details"
+        android:textSize="12dp"
+        android:textStyle="italic"/>
+<LinearLayout
+   android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:background="@drawable/cell_border">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="40dp"
+            android:padding="4dp"
+            android:text="Name "
+            android:textSize="14sp" />
+
+        <EditText
+            android:focusable="false"
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="40dp"
+            android:background="@drawable/cell_border"
+            android:padding="4dp"
+            android:textSize="13sp"
+           />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="40dp"
+            android:padding="4dp"
+            android:text="Ph.No "
+            android:textSize="14sp" />
+
+        <EditText
+            android:focusable="false"
+            android:id="@+id/phone"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="40dp"
+            android:background="@drawable/cell_border"
+            android:padding="4dp"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/cell_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="40dp"
+            android:text="Email "
+            android:padding="4dp"
+            android:textSize="14sp"
+            />
+
+        <EditText
+            android:focusable="false"
+            android:id="@+id/mail"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="40dp"
+            android:background="@drawable/cell_border"
+            android:padding="4dp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="40dp"
+            android:text="Date "
+            android:padding="4dp"
+            android:textSize="14sp"
+            />
+
+        <EditText
+            android:focusable="false"
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@drawable/cell_border"
+            android:padding="4dp"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="60dp"
+            android:text="Address "
+            android:padding="1dp"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="60dp"
+            android:background="@drawable/cell_border"
+            android:padding="4dp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="60dp"
+            android:text=" Time"
+            android:padding="1dp"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:background="@drawable/cell_border"
+            android:padding="4dp"
+            android:textSize="13sp" />
+    </LinearLayout>
+</LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Details"
+        android:textSize="12dp"
+        android:textStyle="italic"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/cell_border">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Brand"
+                android:textSize="13sp"
+                android:background="@drawable/cell_border"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Device Type"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="4dp"
+                android:text="Model.No "
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Serial No"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border">
+
+                <TextView
+                    android:id="@+id/brand"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:padding="4dp"
+                    android:textSize="13sp"
+                    android:background="@drawable/cell_border"/>
+
+                <TextView
+                    android:backgroundTint="@android:color/transparent"
+                    android:id="@+id/type"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:padding="4dp"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/model"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:background="@drawable/cell_border"
+                    android:padding="4dp"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/serial"
+                    android:backgroundTint="@android:color/transparent"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border">
+            <TextView
+                android:padding="4dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Warranty Type"/>
+            <TextView
+                android:padding="4dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Customer Request Date"
+                android:background="@drawable/cell_border"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border">
+            <TextView  android:padding="4dp"
+                android:id="@+id/warranty"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                />
+            <TextView android:padding="4dp"
+                android:id="@+id/req_date"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border"
+            >
+            <TextView
+                android:padding="4dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Damaged"/>
+            <TextView
+                android:padding="4dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:background="@drawable/cell_border"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border"
+            >
+            <TextView
+                android:id="@+id/damaged"
+                android:backgroundTint="@android:color/transparent"
+                android:padding="4dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+               />
+            <TextView
+                android:id="@+id/password"
+                android:padding="4dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Problem"
+                android:textSize="13sp"
+                android:background="@drawable/cell_border"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Diagnosed result"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border">
+
+
+            <TextView
+                android:id="@+id/problem"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/cell_border"
+                android:padding="4dp"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/result"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:padding="4dp"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:background="@drawable/cell_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Actions Need to be taken"
+                android:textSize="13sp"
+               />
+            <TextView
+                android:id="@+id/actions"
+                android:background="@drawable/cell_border"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="4dp"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+        <TextView
+            android:background="@drawable/cell_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Accessories Taken"
+            android:textSize="13sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="HDD"
+                android:textSize="13sp"
+                android:background="@drawable/cell_border"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="RAM"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="4dp"
+                android:text="Adapter "
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="RDVD"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border">
+
+
+            <TextView
+                android:id="@+id/hdd"
+                android:hint="YES/NO"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:textSize="13sp"
+                android:background="@drawable/cell_border"/>
+
+            <TextView
+                android:id="@+id/ram"
+                android:hint="YES/NO"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:textSize="13sp"
+                android:background="@drawable/cell_border"
+                />
+
+            <TextView
+                android:id="@+id/adapter"
+                android:hint="YES/NO"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="4dp"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/rdvd"
+                android:hint="YES/NO"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:textSize="13sp"
+                android:background="@drawable/cell_border"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="HDD.Sno"
+                android:textSize="13sp"
+                android:background="@drawable/cell_border"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="RAM.Sno"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border">
+
+
+
+            <TextView
+                android:id="@+id/hdd_sno"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:background="@drawable/cell_border"
+                android:padding="4dp"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/ram_sno"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:padding="4dp"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Adapter.No"
+                android:textSize="13sp"
+                android:background="@drawable/cell_border"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Can data be erased"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border">
+
+
+
+            <TextView
+                android:id="@+id/adapter_no"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:background="@drawable/cell_border"
+                android:padding="4dp"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/data"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:padding="4dp"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+        <Button
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:layout_marginBottom="30dp"/>
+
+    </LinearLayout>
+</ScrollView>
