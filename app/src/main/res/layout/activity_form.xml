@@ -84,42 +84,52 @@
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="0.7"
-            android:layout_height="40dp"
+            android:layout_weight="1.7"
+            android:layout_height="30dp"
             android:padding="4dp"
             android:text="Name "
+            android:textSize="14sp"
+            android:background="@drawable/cell_border"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:padding="4dp"
+            android:text="Ph.No "
             android:textSize="14sp" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border">
+
+
 
         <EditText
-            android:focusable="false"
+
             android:id="@+id/name"
             android:layout_width="0dp"
-            android:layout_weight="2"
+            android:layout_weight="1.7"
             android:layout_height="40dp"
             android:background="@drawable/cell_border"
             android:padding="4dp"
             android:textSize="13sp"
            />
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="0.7"
-            android:layout_height="40dp"
-            android:padding="4dp"
-            android:text="Ph.No "
-            android:textSize="14sp" />
 
         <EditText
-            android:focusable="false"
+
             android:id="@+id/phone"
             android:layout_width="0dp"
-            android:layout_weight="1.5"
+            android:layout_weight="1"
             android:layout_height="40dp"
             android:background="@drawable/cell_border"
             android:padding="4dp"
             android:textSize="13sp" />
+        </LinearLayout>
 
-    </LinearLayout>
+
 
     <LinearLayout
         android:background="@drawable/cell_border"
@@ -128,34 +138,50 @@
         >
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="0.6"
-            android:layout_height="40dp"
+            android:layout_weight="1.7"
+            android:layout_height="30dp"
             android:text="Email "
             android:padding="4dp"
             android:textSize="14sp"
             />
+        <TextView
+            android:background="@drawable/cell_border"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:text="Date "
+            android:padding="4dp"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="30dp"
+            android:text=" Time"
+            android:padding="4dp"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/cell_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
 
         <EditText
-            android:focusable="false"
+
             android:id="@+id/mail"
             android:layout_width="0dp"
-            android:layout_weight="2"
+            android:layout_weight="1.7"
             android:layout_height="40dp"
             android:background="@drawable/cell_border"
             android:padding="4dp"
             android:textSize="13sp" />
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="0.6"
-            android:layout_height="40dp"
-            android:text="Date "
-            android:padding="4dp"
-            android:textSize="14sp"
-            />
 
         <EditText
-            android:focusable="false"
+
             android:id="@+id/date"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -163,47 +189,41 @@
             android:background="@drawable/cell_border"
             android:padding="4dp"
             android:textSize="13sp" />
+            <EditText
+
+                android:id="@+id/time"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="40dp"
+                android:background="@drawable/cell_border"
+                android:padding="4dp"
+                android:textSize="13sp" />
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         >
         <TextView
-            android:layout_width="0dp"
-            android:layout_weight="0.6"
-            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
             android:text="Address "
-            android:padding="1dp"
-            android:textSize="13sp"
-            />
-
-        <TextView
-            android:id="@+id/address"
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:layout_height="60dp"
-            android:background="@drawable/cell_border"
             android:padding="4dp"
-            android:textSize="13sp" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="0.6"
-            android:layout_height="60dp"
-            android:text=" Time"
-            android:padding="1dp"
             android:textSize="14sp"
             />
 
-        <TextView
-            android:id="@+id/time"
-            android:layout_width="0dp"
-            android:layout_weight="1"
+        <EditText
+
+            android:id="@+id/address"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/cell_border"
             android:padding="4dp"
             android:textSize="13sp" />
+
+
+
     </LinearLayout>
 </LinearLayout>
 
@@ -272,7 +292,8 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/cell_border">
 
-                <TextView
+                <EditText
+
                     android:id="@+id/brand"
                     android:layout_width="0dp"
                     android:layout_weight="1"
@@ -281,7 +302,8 @@
                     android:textSize="13sp"
                     android:background="@drawable/cell_border"/>
 
-                <TextView
+                <EditText
+
                     android:backgroundTint="@android:color/transparent"
                     android:id="@+id/type"
                     android:layout_width="0dp"
@@ -290,7 +312,8 @@
                     android:padding="4dp"
                     android:textSize="13sp" />
 
-                <TextView
+                <EditText
+
                     android:id="@+id/model"
                     android:layout_width="0dp"
                     android:layout_weight="1"
@@ -299,7 +322,8 @@
                     android:padding="4dp"
                     android:textSize="13sp" />
 
-                <TextView
+                <EditText
+
                     android:id="@+id/serial"
                     android:backgroundTint="@android:color/transparent"
                     android:layout_width="0dp"
@@ -337,17 +361,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/cell_border">
-            <TextView  android:padding="4dp"
+            <EditText
+                android:padding="4dp"
                 android:id="@+id/warranty"
                 android:backgroundTint="@android:color/transparent"
                 android:layout_width="0dp"
                 android:layout_weight="1"
+                android:textSize="13sp"
                 android:layout_height="wrap_content"
                 />
-            <TextView android:padding="4dp"
+            <EditText
+                android:padding="4dp"
                 android:id="@+id/req_date"
                 android:layout_width="0dp"
                 android:layout_weight="1"
+                android:textSize="13sp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/cell_border"
                 />
@@ -382,21 +410,25 @@
             android:layout_height="wrap_content"
             android:background="@drawable/cell_border"
             >
-            <TextView
+            <EditText
+
                 android:id="@+id/damaged"
                 android:backgroundTint="@android:color/transparent"
                 android:padding="4dp"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
+                android:textSize="13sp"
                />
-            <TextView
+            <EditText
+
                 android:id="@+id/password"
                 android:padding="4dp"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:background="@drawable/cell_border"
+                android:textSize="13sp"
                 />
 
 
@@ -432,7 +464,8 @@
             android:background="@drawable/cell_border">
 
 
-            <TextView
+            <EditText
+
                 android:id="@+id/problem"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
@@ -441,7 +474,8 @@
                 android:padding="4dp"
                 android:textSize="13sp" />
 
-            <TextView
+            <EditText
+
                 android:id="@+id/result"
                 android:backgroundTint="@android:color/transparent"
                 android:layout_width="0dp"
@@ -525,9 +559,9 @@
             android:background="@drawable/cell_border">
 
 
-            <TextView
+            <EditText
+                android:focusable="false"
                 android:id="@+id/hdd"
-                android:hint="YES/NO"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -535,9 +569,9 @@
                 android:textSize="13sp"
                 android:background="@drawable/cell_border"/>
 
-            <TextView
+            <EditText
+
                 android:id="@+id/ram"
-                android:hint="YES/NO"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -546,9 +580,9 @@
                 android:background="@drawable/cell_border"
                 />
 
-            <TextView
+            <EditText
+
                 android:id="@+id/adapter"
-                android:hint="YES/NO"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -556,9 +590,9 @@
                 android:padding="4dp"
                 android:textSize="13sp" />
 
-            <TextView
+            <EditText
+
                 android:id="@+id/rdvd"
-                android:hint="YES/NO"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -599,7 +633,8 @@
 
 
 
-            <TextView
+            <EditText
+
                 android:id="@+id/hdd_sno"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -608,7 +643,8 @@
                 android:padding="4dp"
                 android:textSize="13sp" />
 
-            <TextView
+            <EditText
+
                 android:id="@+id/ram_sno"
                 android:backgroundTint="@android:color/transparent"
                 android:layout_width="0dp"
@@ -649,7 +685,8 @@
 
 
 
-            <TextView
+            <EditText
+
                 android:id="@+id/adapter_no"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -658,7 +695,8 @@
                 android:padding="4dp"
                 android:textSize="13sp" />
 
-            <TextView
+            <EditText
+
                 android:id="@+id/data"
                 android:backgroundTint="@android:color/transparent"
                 android:layout_width="0dp"
@@ -672,12 +710,16 @@
 
 
 </LinearLayout>
+
         <Button
             android:id="@+id/share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Send"
-            android:layout_marginBottom="30dp"/>
+            android:text="PREVIEW"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="16dp"/>
+
 
     </LinearLayout>
 </ScrollView>
